@@ -59,17 +59,19 @@ namespace WpfLab6
             {
                 return false;
             }
+        }
         private static object CoerceTemp(DependencyObject d, object baseValue)
-        {
-            int v = (int)baseValue;
-            if (v >= -50 && v <= 50)
             {
-                return v;
-            }
-            else
-            {
-                return null;
+                int v = (int)baseValue;
+                if (v >= -50 && v <= 50)
+                {
+                    return v;
+                }
+                else
+                {
+                    return null;
+                }
             }
         }
-    }
+     
 }
